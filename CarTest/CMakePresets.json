@@ -1,0 +1,136 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CARTEST_ENABLE_FOLLOW_SPEED_PI": "ON",
+        "CARTEST_ENABLE_FOLLOW_TURN": "ON",
+        "CARTEST_ENABLE_FOLLOW_INCREMENTAL_PI": "ON",
+        "CARTEST_ENABLE_ACKERMANN_COORDINATION": "ON",
+        "CARTEST_VISION_HOLD_MS": "3000",
+        "CARTEST_VISION_HOLD_RAMP_MS": "300",
+        "CARTEST_SPEED_PERCENT": "100",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CARTEST_ENABLE_BENCH": "OFF",
+        "CARTEST_ENABLE_FOLLOW": "ON",
+        "CARTEST_ENABLE_STEERING": "OFF",
+        "CARTEST_HARDWARE_ACCEPTED": "ON",
+        "CARTEST_RUNTIME_LOG_ENABLED": "ON",
+        "CARTEST_FOLLOW_DIFF_PERMILLE": "150",
+        "CARTEST_TRACK_PROFILE": "3",
+        "CARTEST_ACKERMANN_FASTEST_STRAIGHT_MILLIRPS": "5600",
+        "CARTEST_ACKERMANN_SLOWEST_REQUEST_MILLIRPS": "4400",
+        "CARTEST_ENABLE_GYRO350": "ON",
+        "CARTEST_ENABLE_WIRELESS": "ON",
+        "CARTEST_ENABLE_RED_OBSTACLE": "ON",
+        "CARTEST_RING_TUNE": "0"
+      },
+      "name": "DebugRingFast",
+      "displayName": "C Base | ring 2.8 rps | 100 deg/s"
+    },
+    {
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CARTEST_ENABLE_FOLLOW_SPEED_PI": "ON",
+        "CARTEST_ENABLE_FOLLOW_TURN": "ON",
+        "CARTEST_ENABLE_FOLLOW_INCREMENTAL_PI": "ON",
+        "CARTEST_ENABLE_ACKERMANN_COORDINATION": "ON",
+        "CARTEST_VISION_HOLD_MS": "3000",
+        "CARTEST_VISION_HOLD_RAMP_MS": "300",
+        "CARTEST_SPEED_PERCENT": "100",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CARTEST_ENABLE_BENCH": "OFF",
+        "CARTEST_ENABLE_FOLLOW": "ON",
+        "CARTEST_ENABLE_STEERING": "OFF",
+        "CARTEST_HARDWARE_ACCEPTED": "ON",
+        "CARTEST_RUNTIME_LOG_ENABLED": "ON",
+        "CARTEST_FOLLOW_DIFF_PERMILLE": "150",
+        "CARTEST_TRACK_PROFILE": "3",
+        "CARTEST_ACKERMANN_FASTEST_STRAIGHT_MILLIRPS": "5600",
+        "CARTEST_ACKERMANN_SLOWEST_REQUEST_MILLIRPS": "4400",
+        "CARTEST_ENABLE_GYRO350": "ON",
+        "CARTEST_ENABLE_WIRELESS": "ON",
+        "CARTEST_ENABLE_RED_OBSTACLE": "ON",
+        "CARTEST_RING_TUNE": "3"
+      },
+      "name": "DebugRingFastLimit",
+      "displayName": "极限测试档 | ring 4.2 rps | 145 deg/s"
+    },
+    {
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CARTEST_ENABLE_FOLLOW_SPEED_PI": "ON",
+        "CARTEST_ENABLE_FOLLOW_TURN": "ON",
+        "CARTEST_ENABLE_FOLLOW_INCREMENTAL_PI": "ON",
+        "CARTEST_ENABLE_ACKERMANN_COORDINATION": "ON",
+        "CARTEST_VISION_HOLD_MS": "3000",
+        "CARTEST_VISION_HOLD_RAMP_MS": "300",
+        "CARTEST_SPEED_PERCENT": "100",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CARTEST_ENABLE_BENCH": "OFF",
+        "CARTEST_ENABLE_FOLLOW": "ON",
+        "CARTEST_ENABLE_STEERING": "OFF",
+        "CARTEST_HARDWARE_ACCEPTED": "ON",
+        "CARTEST_RUNTIME_LOG_ENABLED": "ON",
+        "CARTEST_FOLLOW_DIFF_PERMILLE": "150",
+        "CARTEST_TRACK_PROFILE": "3",
+        "CARTEST_ACKERMANN_FASTEST_STRAIGHT_MILLIRPS": "5600",
+        "CARTEST_ACKERMANN_SLOWEST_REQUEST_MILLIRPS": "5000",
+        "CARTEST_ENABLE_GYRO350": "ON",
+        "CARTEST_ENABLE_WIRELESS": "ON",
+        "CARTEST_ENABLE_RED_OBSTACLE": "ON",
+        "CARTEST_RING_TUNE": "4"
+      },
+      "name": "DebugRingFastLimit2",
+      "displayName": "7.6终极版 | 直道7.6 / 弯道5.0 | 287deg/s | exit287deg"
+    },
+    {
+      "name": "DebugMotorMaxSpeed",
+      "displayName": "独立架空测速 | 双后轮满输出 | 7秒自动停止",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CARTEST_ENABLE_MOTOR_MAX_TEST": "ON",
+        "CARTEST_HARDWARE_ACCEPTED": "ON",
+        "CARTEST_ENABLE_BENCH": "OFF",
+        "CARTEST_ENABLE_FOLLOW": "OFF",
+        "CARTEST_ENABLE_STEERING": "OFF",
+        "CARTEST_ENABLE_GYRO350": "OFF",
+        "CARTEST_ENABLE_WIRELESS": "OFF",
+        "CARTEST_ENABLE_RED_OBSTACLE": "OFF",
+        "CARTEST_ENABLE_FOLLOW_SPEED_PI": "OFF",
+        "CARTEST_ENABLE_FOLLOW_INCREMENTAL_PI": "OFF",
+        "CARTEST_ENABLE_FOLLOW_TURN": "OFF",
+        "CARTEST_ENABLE_ACKERMANN_COORDINATION": "OFF",
+        "CARTEST_TRACK_PROFILE": "0",
+        "CARTEST_RING_TUNE": "0",
+        "CARTEST_ACKERMANN_FASTEST_STRAIGHT_MILLIRPS": "4800",
+        "CARTEST_ACKERMANN_SLOWEST_REQUEST_MILLIRPS": "4000",
+        "CARTEST_RUNTIME_LOG_ENABLED": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "DebugRingFast",
+      "configurePreset": "DebugRingFast"
+    },
+    {
+      "name": "DebugRingFastLimit",
+      "configurePreset": "DebugRingFastLimit"
+    },
+    {
+      "name": "DebugRingFastLimit2",
+      "configurePreset": "DebugRingFastLimit2"
+    },
+    {
+      "name": "DebugMotorMaxSpeed",
+      "configurePreset": "DebugMotorMaxSpeed"
+    }
+  ]
+}

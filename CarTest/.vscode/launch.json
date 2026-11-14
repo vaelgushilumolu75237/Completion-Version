@@ -1,0 +1,121 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "7.6终极版 | 直道7.6 / 弯道5.0 | 287deg/s | exit287deg",
+      "type": "stlinkgdbtarget",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build: 7.6终极版 | 直道7.6 / 弯道5.0 | 287deg/s | exit287deg",
+      "serverInterface": "SWD",
+      "serverInterfaceFrequency": "1000",
+      "serverReset": "Software system reset",
+      "imagesAndSymbols": [
+        {
+          "imageFileName": "${workspaceFolder}/build/DebugRingFastLimit2/CarTest.elf",
+          "symbolFileName": "${workspaceFolder}/build/DebugRingFastLimit2/CarTest.elf"
+        }
+      ],
+      "liveWatch": {
+        "enabled": true,
+        "samplesPerSecond": "4"
+      },
+      "preBuild": "",
+      "gdb": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/gnu-gdb-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gdb.exe",
+      "serverExe": "ST-LINK_gdbserver.exe",
+      "serverCwd": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/stlink-gdbserver/7.14.0+st.2/bin",
+      "serverCubeProgPath": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/programmer/2.23.0/bin",
+      "serverShared": false,
+      "serverRtos": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "独立架空测速 | 双后轮满输出 | 7秒自动停止",
+      "type": "stlinkgdbtarget",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build: 独立架空测速 | 双后轮满输出 | 7秒自动停止",
+      "serverInterface": "SWD",
+      "serverInterfaceFrequency": "1000",
+      "serverReset": "Software system reset",
+      "imagesAndSymbols": [
+        {
+          "imageFileName": "${workspaceFolder}/build/DebugMotorMaxSpeed/CarTest.elf",
+          "symbolFileName": "${workspaceFolder}/build/DebugMotorMaxSpeed/CarTest.elf"
+        }
+      ],
+      "liveWatch": {
+        "enabled": true,
+        "samplesPerSecond": "4"
+      },
+      "preBuild": "",
+      "gdb": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/gnu-gdb-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gdb.exe",
+      "serverExe": "ST-LINK_gdbserver.exe",
+      "serverCwd": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/stlink-gdbserver/7.14.0+st.2/bin",
+      "serverCubeProgPath": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/programmer/2.23.0/bin",
+      "serverShared": false,
+      "serverRtos": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "C Base | 环岛2.8圈/秒 | 100度/秒",
+      "type": "stlinkgdbtarget",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build: C Base | 环岛2.8圈/秒 | 100度/秒",
+      "serverInterface": "SWD",
+      "serverInterfaceFrequency": "1000",
+      "serverReset": "Software system reset",
+      "imagesAndSymbols": [
+        {
+          "imageFileName": "${workspaceFolder}/build/DebugRingFast/CarTest.elf",
+          "symbolFileName": "${workspaceFolder}/build/DebugRingFast/CarTest.elf"
+        }
+      ],
+      "liveWatch": {
+        "enabled": true,
+        "samplesPerSecond": "4"
+      },
+      "preBuild": "",
+      "gdb": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/gnu-gdb-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gdb.exe",
+      "serverExe": "ST-LINK_gdbserver.exe",
+      "serverCwd": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/stlink-gdbserver/7.14.0+st.2/bin",
+      "serverCubeProgPath": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/programmer/2.23.0/bin",
+      "serverShared": false,
+      "serverRtos": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "极限测试档 | 环岛4.2圈/秒 | 145度/秒",
+      "type": "stlinkgdbtarget",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build: 极限测试档 | 环岛4.2圈/秒 | 145度/秒",
+      "serverInterface": "SWD",
+      "serverInterfaceFrequency": "1000",
+      "serverReset": "Software system reset",
+      "imagesAndSymbols": [
+        {
+          "imageFileName": "${workspaceFolder}/build/DebugRingFastLimit/CarTest.elf",
+          "symbolFileName": "${workspaceFolder}/build/DebugRingFastLimit/CarTest.elf"
+        }
+      ],
+      "liveWatch": {
+        "enabled": true,
+        "samplesPerSecond": "4"
+      },
+      "preBuild": "",
+      "gdb": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/gnu-gdb-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gdb.exe",
+      "serverExe": "ST-LINK_gdbserver.exe",
+      "serverCwd": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/stlink-gdbserver/7.14.0+st.2/bin",
+      "serverCubeProgPath": "C:/Users/Overseas/AppData/Local/stm32cube/bundles/programmer/2.23.0/bin",
+      "serverShared": false,
+      "serverRtos": {
+        "enabled": false
+      }
+    }
+  ]
+}
